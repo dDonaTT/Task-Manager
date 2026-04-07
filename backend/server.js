@@ -17,10 +17,9 @@ app.use(
 );
 connectDB();
 app.use(express.json());
- // Connect to MongoDB
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
-// app.use("api/tasks", taskRoutes);
+app.use("api/tasks", taskRoutes);
 // app.use("api/report", reportRoutes);
 
 
